@@ -60,7 +60,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="卡片介紹" id="xZy-Le-noA"/>
+                    <navigationItem key="navigationItem" title="卡片介紹" id="xZy-Le-noA">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="EYJ-a3-H4e"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -176,7 +178,7 @@
         <scene sceneID="sav-vj-DJp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gy9-Sv-Q7L" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="卡片介紹" selectedImage="photos-simple-7" id="hZB-Po-eIh"/>
+                    <tabBarItem key="tabBarItem" title="卡片介紹" image="photos-simple-7" selectedImage="photos-simple-7" id="hZB-Po-eIh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w3Z-XC-Cpl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -202,6 +204,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="9FM-os-dRE" kind="relationship" relationship="viewControllers" id="gWH-ai-7gc"/>
@@ -224,6 +227,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="底-01-01-1" translatesAutoresizingMaskIntoConstraints="NO" id="MrU-md-OPo">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="處方卡_同色-1" translatesAutoresizingMaskIntoConstraints="NO" id="rTk-w0-7vy">
                                 <rect key="frame" x="60" y="95" width="90" height="120"/>
@@ -284,61 +288,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="底-01-01-1" translatesAutoresizingMaskIntoConstraints="NO" id="uzL-Zr-wDv">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YID-pH-hPn" appends="YES" id="75o-bQ-OPr"/>
+                                </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="藍-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="uDm-mW-8s7">
-                                <rect key="frame" x="20" y="399" width="60" height="80"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="藍-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="rUj-vO-3Mk">
+                                <rect key="frame" x="300" y="400" width="60" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="藍-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="0Mv-KB-z8q">
-                                <rect key="frame" x="90" y="399" width="60" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="綠_3-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="wFs-2U-C1y">
-                                <rect key="frame" x="160" y="309" width="60" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黃_3-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="NPh-Aw-Aev">
-                                <rect key="frame" x="160" y="219" width="60" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="綠_4-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="Huc-29-OZs">
-                                <rect key="frame" x="230" y="309" width="60" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="藍-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="Wvg-zD-2x5">
-                                <rect key="frame" x="160" y="399" width="60" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="藍-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="Xjp-88-EL8">
-                                <rect key="frame" x="230" y="399" width="60" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="藍-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="4bo-EV-gaa">
-                                <rect key="frame" x="300" y="399" width="60" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="紅_1-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="60P-lc-uMq">
-                                <rect key="frame" x="20" y="129" width="60" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="紅_2-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ebx-5m-lvU">
-                                <rect key="frame" x="90" y="129" width="60" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黃_1-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="z8u-9U-n7g">
-                                <rect key="frame" x="20" y="219" width="60" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黃_2-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="6xq-mn-pjp">
-                                <rect key="frame" x="90" y="219" width="60" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="綠_1-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="3hY-9k-dim">
-                                <rect key="frame" x="20" y="309" width="60" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="綠_2-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="laC-Da-E2b">
-                                <rect key="frame" x="90" y="309" width="60" height="80"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="綠_4-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="xTv-x5-xxe">
+                                <rect key="frame" x="230" y="300" width="60" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="各色藥材卡皆有固定數量, 四位玩家手上會分到各三張藥材卡, 剩餘兩張則為解答, 玩家須通過詢問彼此猜出解答為何種顏色組合。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fg-y7-zFG">
@@ -348,6 +308,54 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="紅_1-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="jLb-ay-Kq3">
+                                <rect key="frame" x="20" y="100" width="60" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黃_1-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="dcu-K0-85e">
+                                <rect key="frame" x="20" y="200" width="60" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黃_2-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="K4d-vt-YQi">
+                                <rect key="frame" x="90" y="200" width="60" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="黃_3-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="8Ii-Lu-GbA">
+                                <rect key="frame" x="160" y="200" width="60" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="綠_2-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="LAk-fV-XcS">
+                                <rect key="frame" x="90" y="300" width="60" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="綠_3-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="YIt-hO-0Yc">
+                                <rect key="frame" x="160" y="300" width="60" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="藍-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="YKL-Ug-wSA">
+                                <rect key="frame" x="90" y="400" width="60" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="藍-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="TYr-xq-Jqn">
+                                <rect key="frame" x="160" y="400" width="60" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="綠_1-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZFM-IO-sR9">
+                                <rect key="frame" x="20" y="300" width="60" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="藍-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="n28-tA-C9p">
+                                <rect key="frame" x="20" y="400" width="60" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="紅_2-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="nkz-Bh-K7Z">
+                                <rect key="frame" x="90" y="100" width="60" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="藍-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZOk-8H-gje">
+                                <rect key="frame" x="230" y="400" width="60" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -358,8 +366,51 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NGf-tD-cTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="YID-pH-hPn">
+                    <connections>
+                        <segue destination="DPK-pj-p4A" kind="show" id="ueq-Ob-emn"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2004" y="711.99400299850083"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Roh-je-NrQ">
+            <objects>
+                <tableViewController id="DPK-pj-p4A" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wMO-pD-t75">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="9uV-5e-OXc">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="6eJ-lH-Y5j">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6eJ-lH-Y5j" id="6r3-yk-MHt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="紅_1-2-1" translatesAutoresizingMaskIntoConstraints="NO" id="c7X-7Y-FGw">
+                                                    <rect key="frame" x="32" y="24" width="60" height="80"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="DPK-pj-p4A" id="Un6-i0-RvU"/>
+                            <outlet property="delegate" destination="DPK-pj-p4A" id="dod-IP-LyG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehc-dx-7Qq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2757.5999999999999" y="707.49625187406298"/>
         </scene>
         <!--遊戲流程-->
         <scene sceneID="KMM-id-Ax5">
@@ -402,7 +453,7 @@
         <scene sceneID="DfU-LR-YHf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uKB-zo-5fN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="遊戲流程" selectedImage="share-7" id="ca4-JG-tX0"/>
+                    <tabBarItem key="tabBarItem" title="遊戲流程" image="share-7" selectedImage="share-7" id="ca4-JG-tX0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TYo-HM-vpt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -421,7 +472,7 @@
         <scene sceneID="Ox3-Ts-Bt2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9FM-os-dRE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="遊戲目標" selectedImage="crown-7" id="alF-7X-DG3"/>
+                    <tabBarItem key="tabBarItem" title="遊戲目標" image="crown-7" selectedImage="crown-7" id="alF-7X-DG3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gng-of-9bR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -444,13 +495,13 @@
         <image name="share-7" width="30" height="30"/>
         <image name="底-01-01-1" width="375" height="554"/>
         <image name="本草_封底" width="375" height="554"/>
-        <image name="紅_1-2-1" width="60" height="80"/>
-        <image name="紅_2-2-1" width="60" height="80"/>
-        <image name="綠_1-2-1" width="60" height="80"/>
-        <image name="綠_2-2-1" width="60" height="80"/>
-        <image name="綠_3-2-1" width="60" height="80"/>
-        <image name="綠_4-2-1" width="60" height="80"/>
-        <image name="藍-2-1" width="60" height="80"/>
+        <image name="紅_1-2-1" width="200" height="273"/>
+        <image name="紅_2-2-1" width="200" height="273"/>
+        <image name="綠_1-2-1" width="200" height="273"/>
+        <image name="綠_2-2-1" width="200" height="273"/>
+        <image name="綠_3-2-1" width="200" height="273"/>
+        <image name="綠_4-2-1" width="200" height="273"/>
+        <image name="藍-2-1" width="200" height="273"/>
         <image name="處方卡_同色-1" width="90" height="120"/>
         <image name="處方卡_紅綠-1" width="90" height="120"/>
         <image name="處方卡_紅藍-1" width="90" height="120"/>
@@ -460,9 +511,9 @@
         <image name="處方卡_黃藍-1" width="90" height="120"/>
         <image name="行動二" width="150" height="200"/>
         <image name="行動五" width="150" height="200"/>
-        <image name="黃_1-2-1" width="60" height="80"/>
-        <image name="黃_2-2-1" width="60" height="80"/>
-        <image name="黃_3-2-1" width="60" height="80"/>
+        <image name="黃_1-2-1" width="200" height="273"/>
+        <image name="黃_2-2-1" width="200" height="273"/>
+        <image name="黃_3-2-1" width="200" height="273"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
 </document>
